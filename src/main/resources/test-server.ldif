@@ -1,0 +1,102 @@
+dn: dc=com,dc=example
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: com
+
+dn: ou=people,dc=com,dc=example
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=com,dc=example
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: ou=subgroups,ou=groups,dc=com,dc=example
+objectclass: top
+objectclass: organizationalUnit
+ou: subgroups
+
+dn: ou=supersubgroups,ou=subgroups,ou=groups,dc=com,dc=example
+objectclass: top
+objectclass: organizationalUnit
+ou: supersubgroups
+
+dn: uid=ben,ou=people,dc=com,dc=example
+objectclass: inetOrgPerson
+cn: Ben Alex
+sn: Alex
+uid: ben
+userPassword: benspassword
+
+dn: uid=ilya@sberbank.ru,ou=people,dc=com,dc=example
+objectclass: inetOrgPerson
+cn: Ilya Bulgakov
+sn: Ilya
+uid: ilya@sberbank.ru
+userPassword: password
+
+dn: uid=nick@sberbank.ru,ou=people,dc=com,dc=example
+objectclass: inetOrgPerson
+cn: Nick Kochnev
+sn: Nick
+uid: nick@sberbank.ru
+userPassword: password1
+
+dn: uid=volodimir@sberbank.ru,ou=people,dc=com,dc=example
+objectclass: inetOrgPerson
+cn: Volo Dimir
+sn: Volodimir
+uid: volodimir@sberbank.ru
+userPassword: password2
+
+dn: uid=dima@sberbank.ru,ou=people,dc=com,dc=example
+objectclass: inetOrgPerson
+cn: Di Ma
+sn: Dima
+uid: dima@sberbank.ru
+userPassword: password3
+
+dn: uid=ertin@sberbank.ru,ou=people,dc=com,dc=example
+objectclass: inetOrgPerson
+cn: Ertin Buzur-ool
+sn: Ertin
+uid: ertin@sberbank.ru
+userPassword: password4
+
+dn: uid=test@sberbank.ru,ou=people,dc=com,dc=example
+objectclass: inetOrgPerson
+cn: Admin Server
+sn: Admin
+uid: test@sberbank.ru
+userPassword: password
+
+dn: uid=ilyatest@sberbank.ru,ou=people,dc=com,dc=example
+objectclass: inetOrgPerson
+cn: Ilya Bulgakov
+sn: Ilya
+uid: ilyatest@sberbank.ru
+userPassword: password
+
+dn: uid=group_member1,ou=groups,dc=com,dc=example
+objectclass: inetOrgPerson
+cn: Member1
+sn: Group Member 1
+uid: group_member1
+userPassword: password
+
+dn: uid=group_member2,ou=groups,dc=com,dc=example
+objectclass: inetOrgPerson
+cn: Member2
+sn: Group Member 2
+uid: group_member2
+userPassword: password
+
+dn: uid=subgroup_member,ou=subgroups,ou=groups,dc=com,dc=example
+objectclass: inetOrgPerson
+cn: Member
+sn: Subgroup Member
+uid: subgroup_member
+userPassword: password
