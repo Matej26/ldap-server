@@ -23,7 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .ldapAuthentication()
                 .userDnPatterns("uid={0}, ou=people")
                 .contextSource()
-                .url("ldap://localhost:8389/dc=com,dc=example")
+                .url("ldap://matej26.github.io/ldap-server:8389/dc=com,dc=example")
                 .and()
                 .passwordCompare().passwordAttribute("userPassword");
     }
